@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+
+   >
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1"
+
+        >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorAccent"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="HangMan"
+            android:textSize="45dp">
+
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:id="@+id/guessWord"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="My Word"
+            android:textSize="40dp"></TextView>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/etinput"
+            android:layout_column="0"
+            android:gravity="center"
+            android:hint="Input One number"
+            android:inputType="textPersonName"
+            android:maxLength="1"
+            android:textColor="#E3DBD9"
+            android:textColorHint="#1E1A1A"
+            android:textSize="30dp"
+            android:textStyle="italic">
+
+        </EditText>
+    </TableRow>
+
+    <TableRow
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+
+        android:background="@color/colorPrimaryDark"
+
+    >
+
+        <TextView
+            android:id="@+id/lettersToBeTired"
+            android:layout_column="0"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:text="Letters Tired:"
+            android:textSize="30dp"></TextView>
+
+</TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/trTriesLeft"
+        >
+
+        <TextView
+            android:id="@+id/txtTriesLeft"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="X X X X X"
+            android:textSize="20dp"></TextView>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/trReset"
+
+        >
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:background="@color/colorSeconday"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="resetGaming"
+            android:text="RESET"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp" />
+
+    </TableRow>
+
+
+
+
+    </TableLayout>
